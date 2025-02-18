@@ -1,3 +1,28 @@
 body {
-  background-color: rgb(227, 245, 239);
+  background-color: black;
+}
+p {
+  font-family: 'Kontrabanda';
+}
+section {
+  width: 100vw;
+  overflow: hidden;
+}
+.screen1 {
+  display: flex;
+  flex-direction: row;
+}
+.image1 {
+  background-image: url(../images/leftbackstage.svg);
+  height: 65vw;
+  width: 50vw;
+}
+.image2 {
+  background-image: url(../images/rightbackstage.svg);
+  height: 65vw;
+  width: 50vw;
+}
+.text1 {
+  color: white;
+  font-size: 3vw;
 }
