@@ -11,18 +11,134 @@ section {
 .screen1 {
   display: flex;
   flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image1 {
   background-image: url(../images/leftbackstage.svg);
   height: 65vw;
   width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 .image2 {
   background-image: url(../images/rightbackstage.svg);
   height: 65vw;
   width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 .text1 {
+  position: absolute;
+  margin-left: 8vw;
+  margin-top: 35vw;
   color: white;
-  font-size: 3vw;
+  font-size: 5vw;
+}
+.hint1 {
+  background-image: url(../images/hint.svg);
+  z-index: 2;
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-left: 48vw;
+  margin-top: 27vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background1 {
+  background-image: url(../images/background1.svg);
+  z-index: -2;
+  width: 57vw;
+  height: 65vw;
+  position: absolute;
+  margin-left: 21vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text2 {
+  position: absolute;
+  margin-left: 32vw;
+  color: white;
+  margin-top: 28vw;
+  font-size: 10vw;
+  z-index: -2;
+}
+.screen2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.text3 {
+  font-size: 7vw;
+  color: white;
+  margin-top: 3vw;
+}
+
+.screen21 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4vw;
+}
+.elementphoto1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element1.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element2.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element3.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element4.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element5.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element6.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto7 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element7.svg);
+  height: 30vw;
+  width: 21vw;
+}
+.elementphoto8 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/element8.svg);
+  height: 30vw;
+  width: 21vw;
 }
