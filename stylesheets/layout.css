@@ -75,7 +75,7 @@ section {
 .text3 {
   font-size: 7vw;
   color: white;
-  margin-top: 3vw;
+  margin-top: 6vw;
 }
 
 .screen21 {
@@ -141,4 +141,226 @@ section {
   background-image: url(../images/element8.svg);
   height: 30vw;
   width: 21vw;
+}
+
+.screen3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4vw;
+}
+.text4 {
+  font-size: 7vw;
+  color: white;
+  margin-top: 4vw;
+}
+
+.screen31 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4vw;
+  align-items: center;
+  width: 80vw;
+}
+.inside-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contour1 {
+  background-image: url(../images/contour1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 9.5vw;
+  height: 22.5vw;
+}
+.silhouette5 {
+  background-image: url(../images/silhouette5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11vw;
+  height: 23vw;
+  margin-left: 5vw;
+}
+.contour2 {
+  background-image: url(../images/contour2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10.5vw;
+  height: 23vw;
+  margin-left: 5vw;
+}
+.silhouette4 {
+  background-image: url(../images/silhouette4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15.5vw;
+  height: 24vw;
+  margin-left: 5vw;
+}
+.contour3 {
+  background-image: url(../images/contour3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11.5vw;
+  height: 23vw;
+  margin-left: 5vw;
+}
+.silhouette2 {
+  background-image: url(../images/silhouette2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10.5vw;
+  height: 23vw;
+}
+.contour4 {
+  background-image: url(../images/contour4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15.5vw;
+  height: 24vw;
+  margin-left: 5vw;
+}
+.silhouette3 {
+  background-image: url(../images/silhouette3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11.5vw;
+  height: 23vw;
+  margin-left: 5vw;
+}
+.contour5 {
+  background-image: url(../images/contour5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 11vw;
+  height: 23vw;
+  margin-left: 5vw;
+}
+.silhouette1 {
+  background-image: url(../images/silhouette1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 9.5vw;
+  height: 22.5vw;
+  margin-left: 5vw;
+}
+
+.screen4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4vw;
+}
+.text5 {
+  font-size: 7vw;
+  color: white;
+  margin-top: 4vw;
+}
+.screen41 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3vw;
+  align-items: center;
+  position: relative;
+}
+.labyrinth {
+  background-image: url(../images/labyrinth.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 53vw;
+  height: 53vw;
+  margin-top: 2vw;
+}
+.hint11 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/hint.svg);
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 43vw;
+}
+.hint2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/hint2.svg);
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: -38vw;
+}
+.hint3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/hint3.svg);
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 2vw;
+}
+.circle {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/circle.svg);
+  height: 8vw;
+  width: 7vw;
+  position: absolute;
+  margin-left: -62vw;
+  margin-top: 43vw;
+}
+.basement {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.seats {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/seats.svg);
+  width: 100vw;
+  height: 65vw;
+}
+.hintbase1 {
+  background-image: url(../images/hint.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-top: -25vw;
+  margin-left: 14vw;
+}
+.hintbase2 {
+  background-image: url(../images/hint.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-top: -36vw;
+  margin-left: 44vw;
+}
+.hintbase3 {
+  background-image: url(../images/hint.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6vw;
+  width: 5vw;
+  position: absolute;
+  margin-top: -25vw;
+  margin-left: 76vw;
 }
