@@ -169,7 +169,7 @@ section {
   margin-top: 4vw;
 }
 
-.screen31 {
+/* .screen31 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -178,11 +178,9 @@ section {
   margin-top: 4vw;
   align-items: center;
   width: 80vw;
-}
+} */
 .inside-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 48vw;
 }
 .contour1 {
   background-image: url(../images/contour1.svg);
@@ -190,15 +188,19 @@ section {
   background-size: cover;
   width: 9.5vw;
   height: 22.5vw;
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 4vw;
 }
 #silhouette5 {
-  background-image: url(../images/silhouette5.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 11vw;
   height: 23vw;
-  margin-left: 5vw;
-  position: relative;
+  position: absolute;
+}
+
+#silhouette5header {
+  margin-left: 22vw;
+  margin-top: 4vw;
 }
 
 .contour2 {
@@ -207,62 +209,82 @@ section {
   background-size: cover;
   width: 10.5vw;
   height: 23vw;
-  margin-left: 5vw;
+  position: absolute;
+  margin-left: 43vw;
+  margin-top: 0vw;
 }
 #silhouette4 {
-  background-image: url(../images/silhouette4.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 15.5vw;
   height: 24vw;
-  margin-left: 5vw;
+  position: absolute;
 }
+#silhouette4header {
+  margin-left: 62vw;
+  margin-top: 4vw;
+}
+
 .contour3 {
   background-image: url(../images/contour3.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 11.5vw;
   height: 23vw;
-  margin-left: 5vw;
+  position: absolute;
+  margin-left: 85vw;
+  margin-top: 0vw;
 }
 #silhouette2 {
-  background-image: url(../images/silhouette2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 10.5vw;
-  height: 23vw;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  width: 15.5vw;
+  height: 24vw;
+  position: absolute;
 }
+#silhouette2header {
+  margin-left: 2vw;
+  margin-top: 29vw;
+}
+
 .contour4 {
   background-image: url(../images/contour4.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 15.5vw;
   height: 24vw;
-  margin-left: 5vw;
+  position: absolute;
+  margin-left: 20vw;
+  margin-top: 0vw;
 }
 #silhouette3 {
-  background-image: url(../images/silhouette3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 11.5vw;
-  height: 23vw;
-  margin-left: 5vw;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  width: 15.5vw;
+  height: 24vw;
+  position: absolute;
 }
+#silhouette3header {
+  margin-left: 41vw;
+  margin-top: 0vw;
+}
+
 .contour5 {
   background-image: url(../images/contour5.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 11vw;
   height: 23vw;
-  margin-left: 5vw;
+  position: absolute;
+  margin-left: 64vw;
+  margin-top: 0vw;
 }
 #silhouette1 {
-  background-image: url(../images/silhouette1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 9.5vw;
-  height: 22.5vw;
-  margin-left: 5vw;
+  width: 15.5vw;
+  height: 24vw;
+  position: absolute;
+}
+#silhouette1header {
+  margin-left: 82vw;
+  margin-top: 18vw;
 }
 
 .screen4 {
