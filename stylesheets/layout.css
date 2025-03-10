@@ -186,8 +186,8 @@ section {
   background-image: url(../images/contour1.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 9.5vw;
-  height: 22.5vw;
+  width: 10vw;
+  height: 23.5vw;
   position: absolute;
   margin-left: 5vw;
   margin-top: 4vw;
@@ -207,8 +207,8 @@ section {
   background-image: url(../images/contour2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 10.5vw;
-  height: 23vw;
+  width: 11vw;
+  height: 24vw;
   position: absolute;
   margin-left: 43vw;
   margin-top: 0vw;
@@ -227,8 +227,8 @@ section {
   background-image: url(../images/contour3.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 11.5vw;
-  height: 23vw;
+  width: 12vw;
+  height: 24.5vw;
   position: absolute;
   margin-left: 85vw;
   margin-top: 0vw;
@@ -272,7 +272,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   width: 11vw;
-  height: 23vw;
+  height: 23.5vw;
   position: absolute;
   margin-left: 64vw;
   margin-top: 0vw;
