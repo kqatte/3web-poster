@@ -51,6 +51,7 @@ section {
   /* background-color: #660000; */
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .background1 {
   background-image: url(../images/background1.svg);
@@ -114,7 +115,7 @@ section {
   margin-top: -0.5vw;
   height: 24vw;
   width: 16.9vw;
-  transition: transform 2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 /* ТРЕТИЙ ЭКРАН */
@@ -164,6 +165,7 @@ section {
 #silhouette5header {
   margin-left: 22vw;
   margin-top: 4vw;
+  cursor: pointer;
 }
 
 .contour2 {
@@ -184,6 +186,7 @@ section {
 #silhouette4header {
   margin-left: 62vw;
   margin-top: 4vw;
+  cursor: pointer;
 }
 
 .contour3 {
@@ -204,6 +207,7 @@ section {
 #silhouette2header {
   margin-left: 2vw;
   margin-top: 29vw;
+  cursor: pointer;
 }
 
 .contour4 {
@@ -224,6 +228,7 @@ section {
 #silhouette3header {
   margin-left: 41vw;
   margin-top: 0vw;
+  cursor: pointer;
 }
 
 .contour5 {
@@ -244,6 +249,7 @@ section {
 #silhouette1header {
   margin-left: 82vw;
   margin-top: 18vw;
+  cursor: pointer;
 }
 
 /* ЧЕТВЕРТЫЙ ЭКРАН */
@@ -378,6 +384,7 @@ section {
   position: absolute;
   margin-top: -30vw;
   margin-left: 14vw;
+  cursor: pointer;
 }
 #hintbase2 {
   background-image: url(../images/hint.svg);
@@ -388,6 +395,7 @@ section {
   position: absolute;
   margin-top: -37vw;
   margin-left: 49vw;
+  cursor: pointer;
 }
 #hintbase3 {
   background-image: url(../images/hint.svg);
@@ -398,4 +406,5 @@ section {
   position: absolute;
   margin-top: -29vw;
   margin-left: 80vw;
+  cursor: pointer;
 }
