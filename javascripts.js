@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   BackgroundMove()
-  // ChangePhoto()
+
   Draggable1()
   Draggable2()
   Draggable3()
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Draggable5()
 })
 
+// ПЕРВЫЙ ЭКРАН
 function BackgroundMove() {
   document.querySelector('.hint1').addEventListener('click', () => {
     const leftBox = document.querySelector('.image1')
@@ -21,26 +22,43 @@ function BackgroundMove() {
     Hint.style.opacity = '0'
   })
 }
-// НЕ РАБОТАЕТ
-// function ChangePhoto() {
-//   const photos = [
-//     'images/element.svg',
-//     'images/element3.svg',
-//     'images/element4.svg'
-//   ]
-//   let currentIndex = 0
 
-//   const photoElement = document.querySelector('.elementphoto1')
-//   currentIndex = (currentIndex + 1) % photos.length
-//   photoElement.style.opacity = 0
-//   setTimeout(() => {
-//     photoElement.src = photos[currentIndex]
+// ВТОРОЙ ЭКРАН
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.elementphoto')
 
-//     photoElement.style.opacity = 1
-//   }, 500)
-//   photoElement.addEventListener('click', ChangePhoto)
-// }
+  images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+      // Проверяем, есть ли следующая картинка
+      if (index < images.length - 1) {
+        const nextImage = images[index + 1]
 
+        // Получаем текущие позиции
+        const imageRect = image.getBoundingClientRect()
+        const nextImageRect = nextImage.getBoundingClientRect()
+
+        // Вычисляем смещение для анимации
+        const deltaX = nextImageRect.left - imageRect.left
+        const deltaY = nextImageRect.top - imageRect.top
+
+        // Анимация первой картинки
+        image.style.transform = `translate(${deltaX}px, ${deltaY}px)`
+        nextImage.style.transform = `translate(${-deltaX}px, ${-deltaY}px)`
+
+        // Ждём завершения анимации
+        setTimeout(() => {
+          // Меняем элементы местами в DOM
+          image.parentNode.insertBefore(nextImage, image)
+
+          // Сбрасываем трансформации
+          image.style.transform = ''
+          nextImage.style.transform = ''
+        }, 500) // Время анимации должно совпадать с CSS transition
+      }
+    })
+  })
+})
+// ТРЕТИЙ ЭКРАН
 function Draggable1() {
   // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette5'))
@@ -283,48 +301,90 @@ function Draggable5() {
     }
   }
 }
-// НЕ РАБОТАЕТ
-// const canvas = document.getElementById('canvas')
-// const ctx = canvas.getContext('2d')
 
-// // Устанавливаем размеры канваса
-// canvas.width = window.innerWidth
-// canvas.height = window.innerHeight
+// ЧЕТВЕРТЫЙ ЭКРАН
+// function initCanvas() {
+//   let canvas = document.getElementById('canvas')
+//   let ctx = canvas.getContext('2d')
 
-// // Переменные для рисования
-// let drawing = false
+//   function getMousePos(canvas, evt) {
+//     let rect = canvas.getBoundingClientRect()
+//     return {
+//       x: evt.clientX - rect.left,
+//       y: evt.clientY - rect.top
+//     }
+//   }
 
-// // Начало рисования
-// canvas.addEventListener('mousedown', () => {
-//   drawing = true
-//   ctx.beginPath() // Начинаем новый путь
-// })
+//   function mouseMove(evt) {
+//     let mousePos = getMousePos(canvas, evt)
+//     ctx.lineTo(mousePos.x, mousePos.y)
+//     ctx.stroke()
+//   }
 
-// // Конец рисования
-// canvas.addEventListener('mouseup', () => {
-//   drawing = false
-//   ctx.closePath() // Закрываем путь
-// })
+//   canvas.addEventListener('mousedown', function (evt) {
+//     let mousePos = getMousePos(canvas, evt)
+//     ctx.beginPath()
+//     ctx.moveTo(mousePos.x, mousePos.y)
+//     evt.preventDefault()
+//     canvas.addEventListener('mousemove', mouseMove, false)
+//   })
 
-// // Рисуем линии
-// canvas.addEventListener('mousemove', (event) => {
-//   if (!drawing) return
+//   canvas.addEventListener(
+//     'mouseup',
+//     function () {
+//       canvas.removeEventListener('mousemove', mouseMove, false)
+//     },
+//     false
+//   )
 
-//   const x = event.clientX
-//   const y = event.clientY
+//   document.getElementById('clear').addEventListener(
+//     'click',
+//     function () {
+//       ctx.clearRect(0, 0, canvas.width, canvas.height)
+//     },
+//     false
+//   )
+// }
 
-//   ctx.lineWidth = 5 // Толщина линии
-//   ctx.lineCap = 'round' // Закругление концов линий
-//   ctx.strokeStyle = '#740606' // Цвет линии (черный)
+// ПОДВАЛ
+document.addEventListener('DOMContentLoaded', () => {
+  const mainObject = document.getElementById('hintbase1')
+  const secondaryObject = document.getElementById('anna')
 
-//   ctx.lineTo(x, y) // Рисуем линию до текущего положения курсора
-//   ctx.stroke() // Отрисовка линии
-//   ctx.beginPath() // Начинаем новый путь для следующего сегмента
-//   ctx.moveTo(x, y) // Перемещаемся к текущему положению курсора
-// })
+  mainObject.addEventListener('click', () => {
+    // Прячем основной объект
+    mainObject.style.opacity = '0'
+    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
 
-// // Изменяем размеры канваса при изменении размеров окна
-// window.addEventListener('resize', () => {
-//   canvas.width = window.innerWidth
-//   canvas.height = window.innerHeight
-// })
+    // Показываем вторичный объект
+    secondaryObject.style.opacity = '1'
+  })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainObject = document.getElementById('hintbase2')
+  const secondaryObject = document.getElementById('kate')
+
+  mainObject.addEventListener('click', () => {
+    // Прячем основной объект
+    mainObject.style.opacity = '0'
+    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
+
+    // Показываем вторичный объект
+    secondaryObject.style.opacity = '1'
+  })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainObject = document.getElementById('hintbase3')
+  const secondaryObject = document.getElementById('kamila')
+
+  mainObject.addEventListener('click', () => {
+    // Прячем основной объект
+    mainObject.style.opacity = '0'
+    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
+
+    // Показываем вторичный объект
+    secondaryObject.style.opacity = '1'
+  })
+})

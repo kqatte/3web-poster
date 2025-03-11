@@ -8,6 +8,7 @@ section {
   width: 100vw;
   overflow: hidden;
 }
+/* ПЕРВЫЙ ЭКРАН  */
 .screen1 {
   display: flex;
   flex-direction: row;
@@ -71,6 +72,8 @@ section {
   z-index: -2;
   animation: shake 0.5s infinite;
 }
+
+/* ВТОРОЙ ЭКРАН */
 .screen2 {
   display: flex;
   flex-direction: row;
@@ -96,65 +99,25 @@ section {
   margin-top: 4vw;
   width: 70vw;
 }
-.elementphoto1 {
+.image-container {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/element1.svg);
-  height: 24vw;
-  width: 16.9vw;
-  transition: opacity 0.5s ease;
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70vw;
+  cursor: pointer;
 }
-.elementphoto2 {
+.elementphoto {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/element2.svg);
+  margin-top: -0.5vw;
   height: 24vw;
   width: 16.9vw;
-}
-.elementphoto3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element3.svg);
-  height: 24vw;
-  width: 16.9vw;
-}
-.elementphoto4 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element4.svg);
-  height: 24vw;
-  width: 16.9vw;
-}
-.elementphoto5 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element5.svg);
-  height: 24vw;
-  width: 16.9vw;
-}
-.elementphoto6 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element6.svg);
-  height: 24vw;
-  width: 16.9vw;
-}
-.elementphoto7 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element7.svg);
-  height: 24vw;
-  width: 16.9vw;
-}
-.elementphoto8 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/element8.svg);
-  height: 24vw;
-  width: 16.9vw;
+  transition: transform 2s ease-in-out;
 }
 
+/* ТРЕТИЙ ЭКРАН */
 .screen3 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,8 +197,6 @@ section {
   margin-top: 0vw;
 }
 #silhouette2 {
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   width: 15.5vw;
   height: 24vw;
   position: absolute;
@@ -256,8 +217,6 @@ section {
   margin-top: 0vw;
 }
 #silhouette3 {
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   width: 15.5vw;
   height: 24vw;
   position: absolute;
@@ -287,6 +246,7 @@ section {
   margin-top: 18vw;
 }
 
+/* ЧЕТВЕРТЫЙ ЭКРАН */
 .screen4 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,7 +258,7 @@ section {
 .text5 {
   font-size: 7vw;
   color: white;
-  margin-top: 4vw;
+  margin-top: 5vw;
 }
 #canvas {
   background-repeat: no-repeat;
@@ -306,10 +266,11 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 3vw;
+
   align-items: center;
   position: relative;
   cursor: crosshair;
+  height: 65vw;
 }
 .labyrinth {
   background-image: url(../images/labyrinth.svg);
@@ -317,7 +278,7 @@ section {
   background-size: cover;
   width: 53vw;
   height: 53vw;
-  margin-top: 2vw;
+  margin-top: -5vw;
 }
 .hint11 {
   background-repeat: no-repeat;
@@ -359,6 +320,16 @@ section {
   margin-left: -62vw;
   margin-top: 43vw;
 }
+#clear {
+  position: absolute;
+  margin-top: 55vw;
+  z-index: 10;
+  height: 7vw;
+  width: 14vw;
+  cursor: pointer;
+}
+
+/* ПОДВАЛ */
 .basement {
   background-repeat: no-repeat;
   background-size: cover;
@@ -371,33 +342,60 @@ section {
   width: 100vw;
   height: 65vw;
 }
-.hintbase1 {
+#anna {
+  width: 25vw;
+  height: 40vw;
+  position: absolute;
+  margin-top: -40vw;
+  margin-left: 5vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#kate {
+  width: 20vw;
+  height: 37.5vw;
+  position: absolute;
+  margin-top: -50vw;
+  margin-left: 40vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#kamila {
+  width: 20vw;
+  height: 37.5vw;
+  position: absolute;
+  margin-top: -40vw;
+  margin-left: 70vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#hintbase1 {
   background-image: url(../images/hint.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6vw;
   width: 5vw;
   position: absolute;
-  margin-top: -25vw;
+  margin-top: -30vw;
   margin-left: 14vw;
 }
-.hintbase2 {
+#hintbase2 {
   background-image: url(../images/hint.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6vw;
   width: 5vw;
   position: absolute;
-  margin-top: -36vw;
-  margin-left: 44vw;
+  margin-top: -37vw;
+  margin-left: 49vw;
 }
-.hintbase3 {
+#hintbase3 {
   background-image: url(../images/hint.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 6vw;
   width: 5vw;
   position: absolute;
-  margin-top: -25vw;
-  margin-left: 76vw;
+  margin-top: -29vw;
+  margin-left: 80vw;
 }

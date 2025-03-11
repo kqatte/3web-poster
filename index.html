@@ -8,6 +8,7 @@
     <script src="javascripts.js"></script>
   </head>
   <body>
+    <!-- ПЕРВЫЙ ЭКРАН -->
     <section class="screen1">
       <div class="image1"></div>
       <p class="text1">НАЖМИ, ЧТОБЫ НАЧАТЬ СПЕКТАКЛЬ</p>
@@ -16,21 +17,34 @@
       <div class="background1"></div>
       <p class="text2">А ЕСЛИ...</p>
     </section>
+    <!-- ВТОРОЙ ЭКРАН -->
     <section class="screen2">
       <p class="text3">соедини фотографию</p>
     </section>
     <section class="inside-box2">
       <section class="screen21">
-        <div class="elementphoto1"></div>
-        <div class="elementphoto2"></div>
+        <div class="image-container">
+          <!-- ПОДПРАВИТЬ ФОТКИ -->
+          <!-- ПЛЮС АНИМАЦИЯ ЛИНИЙ -->
+          <img class="elementphoto" src="images/element5.svg" />
+          <img class="elementphoto" src="images/element6.svg" />
+          <img class="elementphoto" src="images/element7.svg" />
+          <img class="elementphoto" src="images/element8.svg" />
+          <img class="elementphoto" src="images/element1.svg" />
+          <img class="elementphoto" src="images/element2.svg" />
+          <img class="elementphoto" src="images/element3.svg" />
+          <img class="elementphoto" src="images/element4.svg" />
+        </div>
+        <!-- <div class="elementphoto2"></div>
         <div class="elementphoto3"></div>
         <div class="elementphoto4"></div>
         <div class="elementphoto5"></div>
         <div class="elementphoto6"></div>
         <div class="elementphoto7"></div>
-        <div class="elementphoto8"></div>
+        <div class="elementphoto8"></div> -->
       </section>
     </section>
+    <!-- ТРЕТИЙ ЭКРАН -->
     <section class="screen3">
       <p class="text4">сопоставь силуэты и контур</p>
     </section>
@@ -59,6 +73,7 @@
         </div>
       </section>
     </section>
+    <!-- ЧЕТВЕРТЫЙ ЭКРАН -->
     <section class="screen4">
       <p class="text5">нарисуй выход</p>
     </section>
@@ -68,12 +83,17 @@
       <div class="hint2"></div>
       <div class="hint3"></div>
       <div class="circle"></div>
+      <img id="clear" src="images/clear.svg" />
     </section>
+    <!-- ПОДВАЛ -->
     <section class="basement">
       <div class="seats"></div>
-      <div class="hintbase1"></div>
-      <div class="hintbase2"></div>
-      <div class="hintbase3"></div>
+      <div><img id="anna" src="images/anna.svg" /></div>
+      <div><img id="kamila" src="images/kamila.svg" /></div>
+      <div><img id="kate" src="images/kate.svg" /></div>
+      <div id="hintbase1"></div>
+      <div id="hintbase2"></div>
+      <div id="hintbase3"></div>
     </section>
   </body>
 </html>
