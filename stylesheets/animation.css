@@ -17,19 +17,19 @@
 }
 
 .hint1:hover {
-  transform: scale(1.1); /* Увеличиваем размер на 10% */
+  transform: scale(1.1);
   filter: grayscale(30%) brightness(50%);
 }
 #hintbase1:hover {
-  transform: scale(1.1); /* Увеличиваем размер на 10% */
+  transform: scale(1.1);
   filter: grayscale(30%) brightness(50%);
 }
 
 #hintbase2:hover {
-  transform: scale(1.1); /* Увеличиваем размер на 10% */
+  transform: scale(1.1);
   filter: grayscale(30%) brightness(50%);
 }
 #hintbase3:hover {
-  transform: scale(1.1); /* Увеличиваем размер на 10% */
+  transform: scale(1.1);
   filter: grayscale(30%) brightness(50%);
 }

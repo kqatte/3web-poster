@@ -259,24 +259,30 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 4vw;
+  margin-top: 8vw;
 }
 .text5 {
   font-size: 7vw;
   color: white;
   margin-top: 5vw;
 }
-#canvas {
+.canvas {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-
+  /* flex-wrap: wrap; */
   align-items: center;
   position: relative;
   cursor: crosshair;
   height: 65vw;
+  margin-top: -2vw;
+}
+#canvas {
+  position: absolute;
+  width: 100vw;
+  height: 65vw;
+  z-index: 10;
 }
 .labyrinth {
   background-image: url(../images/labyrinth.svg);
@@ -284,7 +290,7 @@ section {
   background-size: cover;
   width: 53vw;
   height: 53vw;
-  margin-top: -5vw;
+  margin-top: -3vw;
 }
 .hint11 {
   background-repeat: no-repeat;
@@ -294,7 +300,7 @@ section {
   width: 5vw;
   position: absolute;
   margin-left: 60vw;
-  margin-top: 43vw;
+  margin-top: 39vw;
 }
 .hint2 {
   background-repeat: no-repeat;
@@ -304,7 +310,7 @@ section {
   width: 5vw;
   position: absolute;
   margin-left: 60vw;
-  margin-top: -38vw;
+  margin-top: -43vw;
 }
 .hint3 {
   background-repeat: no-repeat;
@@ -314,17 +320,18 @@ section {
   width: 5vw;
   position: absolute;
   margin-left: 60vw;
-  margin-top: 2vw;
+  margin-top: -1vw;
 }
 .circle {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/circle.svg);
-  height: 8vw;
-  width: 7vw;
+  background-image: url(../images/vxod.svg);
+  height: 4vw;
+  width: 8vw;
   position: absolute;
-  margin-left: -62vw;
-  margin-top: 43vw;
+  margin-left: -64vw;
+  margin-top: 38vw;
+  z-index: 10;
 }
 #clear {
   position: absolute;

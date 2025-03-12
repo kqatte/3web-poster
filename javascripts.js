@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   BackgroundMove()
-
+  initCanvas()
   Draggable1()
   Draggable2()
   Draggable3()
@@ -276,12 +276,69 @@ function Draggable5() {
 }
 
 // ЧЕТВЕРТЫЙ ЭКРАН
+
+function initCanvas() {
+  var canvas = document.getElementById('canvas')
+  if (!canvas) {
+    console.error('Canvas element not found!')
+    return
+  }
+
+  var ctx = canvas.getContext('2d')
+  if (!ctx) {
+    console.error('2D context is not supported!')
+    return
+  }
+
+  canvas.width = window.innerWidth * 0.8
+  canvas.height = window.innerHeight * 0.6
+
+  ctx.strokeStyle = '#740606'
+  ctx.lineWidth = 5
+
+  function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect()
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    }
+  }
+
+  function mouseMove(evt) {
+    var mousePos = getMousePos(canvas, evt)
+    ctx.lineTo(mousePos.x, mousePos.y)
+    ctx.stroke()
+  }
+
+  canvas.addEventListener('mousedown', function (evt) {
+    var mousePos = getMousePos(canvas, evt)
+    ctx.beginPath()
+    ctx.moveTo(mousePos.x, mousePos.y)
+    evt.preventDefault()
+    canvas.addEventListener('mousemove', mouseMove, false)
+  })
+
+  canvas.addEventListener('mouseup', function () {
+    canvas.removeEventListener('mousemove', mouseMove, false)
+  })
+
+  canvas.addEventListener('mouseout', function () {
+    canvas.removeEventListener('mousemove', mouseMove, false)
+  })
+
+  document.getElementById('clear').addEventListener('click', function () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+  })
+}
+
 // function initCanvas() {
-//   let canvas = document.getElementById('canvas')
-//   let ctx = canvas.getContext('2d')
+//   var canvas = document.getElementById('canvas')
+//   var ctx = canvas.getContext('2d')
+//   ctx.strokeStyle = '#740606'
+//   ctx.lineWidth = '5'
 
 //   function getMousePos(canvas, evt) {
-//     let rect = canvas.getBoundingClientRect()
+//     var rect = canvas.getBoundingClientRect()
 //     return {
 //       x: evt.clientX - rect.left,
 //       y: evt.clientY - rect.top
@@ -289,13 +346,13 @@ function Draggable5() {
 //   }
 
 //   function mouseMove(evt) {
-//     let mousePos = getMousePos(canvas, evt)
+//     var mousePos = getMousePos(canvas, evt)
 //     ctx.lineTo(mousePos.x, mousePos.y)
 //     ctx.stroke()
 //   }
 
 //   canvas.addEventListener('mousedown', function (evt) {
-//     let mousePos = getMousePos(canvas, evt)
+//     var mousePos = getMousePos(canvas, evt)
 //     ctx.beginPath()
 //     ctx.moveTo(mousePos.x, mousePos.y)
 //     evt.preventDefault()
@@ -317,6 +374,29 @@ function Draggable5() {
 //     },
 //     false
 //   )
+
+//   var size = [1, 3, 5, 10, 15, 20]
+//   var sizeNames = ['default', 'three', 'five', 'ten', 'fifteen', 'twenty']
+
+//   // function listener(i) {
+//   //   document.getElementById(colors[i]).addEventListener(
+//   //     'click',
+//   //     function () {
+//   //       ctx.strokeStyle = colors[i]
+//   //     },
+//   //     false
+//   //   )
+//   // }
+
+//   // function fontSizes(i) {
+//   //   document.getElementById(sizeNames[i]).addEventListener(
+//   //     'click',
+//   //     function () {
+//   //       ctx.setLineWidth(size[i])
+//   //     },
+//   //     false
+//   //   )
+//   // }
 // }
 
 // ПОДВАЛ
