@@ -48,9 +48,9 @@ section {
   position: absolute;
   margin-left: 48vw;
   margin-top: 27vw;
-  /* background-color: #660000; */
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
 }
 .background1 {
@@ -385,6 +385,7 @@ section {
   margin-top: -30vw;
   margin-left: 14vw;
   cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 #hintbase2 {
   background-image: url(../images/hint.svg);
@@ -396,6 +397,7 @@ section {
   margin-top: -37vw;
   margin-left: 49vw;
   cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 #hintbase3 {
   background-image: url(../images/hint.svg);
@@ -407,4 +409,5 @@ section {
   margin-top: -29vw;
   margin-left: 80vw;
   cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
