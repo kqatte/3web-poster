@@ -435,3 +435,14 @@ document.addEventListener('DOMContentLoaded', () => {
     secondaryObject.style.opacity = '1'
   })
 })
+document.addEventListener('DOMContentLoaded', () => {
+  const mainObject = document.getElementById('fakebutton')
+  const secondaryObject = document.getElementById('artem')
+
+  mainObject.addEventListener('click', () => {
+    mainObject.style.opacity = '0'
+    mainObject.style.pointerEvents = 'none'
+
+    secondaryObject.style.opacity = '1'
+  })
+})

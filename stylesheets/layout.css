@@ -382,6 +382,15 @@ section {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+#artem {
+  width: 12vw;
+  height: 19vw;
+  position: absolute;
+  margin-top: -55vw;
+  margin-left: 20vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 #hintbase1 {
   background-image: url(../images/hint.svg);
   background-repeat: no-repeat;
@@ -415,6 +424,19 @@ section {
   position: absolute;
   margin-top: -29vw;
   margin-left: 80vw;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#fakebutton {
+  background-image: url(../images/fakebutton.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4.5vw;
+  width: 9vw;
+  position: absolute;
+  margin-top: -39.5vw;
+  margin-left: 20vw;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
