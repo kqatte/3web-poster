@@ -29,38 +29,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   images.forEach((image, index) => {
     image.addEventListener('click', () => {
-      // Проверяем, есть ли следующая картинка
       if (index < images.length - 1) {
         const nextImage = images[index + 1]
 
-        // Получаем текущие позиции
         const imageRect = image.getBoundingClientRect()
         const nextImageRect = nextImage.getBoundingClientRect()
 
-        // Вычисляем смещение для анимации
         const deltaX = nextImageRect.left - imageRect.left
         const deltaY = nextImageRect.top - imageRect.top
 
-        // Анимация первой картинки
         image.style.transform = `translate(${deltaX}px, ${deltaY}px)`
         nextImage.style.transform = `translate(${-deltaX}px, ${-deltaY}px)`
 
-        // Ждём завершения анимации
         setTimeout(() => {
-          // Меняем элементы местами в DOM
           image.parentNode.insertBefore(nextImage, image)
 
-          // Сбрасываем трансформации
           image.style.transform = ''
           nextImage.style.transform = ''
-        }, 500) // Время анимации должно совпадать с CSS transition
+        }, 500)
       }
     })
   })
 })
 // ТРЕТИЙ ЭКРАН
 function Draggable1() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette5'))
 
   function dragElement(elmnt) {
@@ -69,39 +61,36 @@ function Draggable1() {
       pos3 = 0,
       pos4 = 0
     if (document.getElementById(elmnt.id + 'header')) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown
     }
 
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag
     }
 
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-      // calculate the new cursor position:
+
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-      // set the element's new position:
+
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null
       document.onmousemove = null
     }
@@ -109,7 +98,6 @@ function Draggable1() {
 }
 
 function Draggable2() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette1'))
 
   function dragElement(elmnt) {
@@ -118,46 +106,42 @@ function Draggable2() {
       pos3 = 0,
       pos4 = 0
     if (document.getElementById(elmnt.id + 'header')) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown
     }
 
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag
     }
 
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-      // calculate the new cursor position:
+
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-      // set the element's new position:
+
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null
       document.onmousemove = null
     }
   }
 }
 function Draggable3() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette2'))
 
   function dragElement(elmnt) {
@@ -166,46 +150,42 @@ function Draggable3() {
       pos3 = 0,
       pos4 = 0
     if (document.getElementById(elmnt.id + 'header')) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown
     }
 
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag
     }
 
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-      // calculate the new cursor position:
+
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-      // set the element's new position:
+
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null
       document.onmousemove = null
     }
   }
 }
 function Draggable4() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette3'))
 
   function dragElement(elmnt) {
@@ -214,39 +194,36 @@ function Draggable4() {
       pos3 = 0,
       pos4 = 0
     if (document.getElementById(elmnt.id + 'header')) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown
     }
 
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag
     }
 
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-      // calculate the new cursor position:
+
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-      // set the element's new position:
+
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null
       document.onmousemove = null
     }
@@ -254,7 +231,6 @@ function Draggable4() {
 }
 
 function Draggable5() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById('silhouette4'))
 
   function dragElement(elmnt) {
@@ -263,39 +239,36 @@ function Draggable5() {
       pos3 = 0,
       pos4 = 0
     if (document.getElementById(elmnt.id + 'header')) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown
     }
 
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag
     }
 
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-      // calculate the new cursor position:
+
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-      // set the element's new position:
+
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null
       document.onmousemove = null
     }
@@ -352,11 +325,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const secondaryObject = document.getElementById('anna')
 
   mainObject.addEventListener('click', () => {
-    // Прячем основной объект
     mainObject.style.opacity = '0'
-    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
+    mainObject.style.pointerEvents = 'none'
 
-    // Показываем вторичный объект
     secondaryObject.style.opacity = '1'
   })
 })
@@ -366,11 +337,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const secondaryObject = document.getElementById('kate')
 
   mainObject.addEventListener('click', () => {
-    // Прячем основной объект
     mainObject.style.opacity = '0'
-    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
+    mainObject.style.pointerEvents = 'none'
 
-    // Показываем вторичный объект
     secondaryObject.style.opacity = '1'
   })
 })
@@ -380,11 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const secondaryObject = document.getElementById('kamila')
 
   mainObject.addEventListener('click', () => {
-    // Прячем основной объект
     mainObject.style.opacity = '0'
-    mainObject.style.pointerEvents = 'none' // Отключаем возможность клика
+    mainObject.style.pointerEvents = 'none'
 
-    // Показываем вторичный объект
     secondaryObject.style.opacity = '1'
   })
 })
