@@ -81,9 +81,11 @@ section {
   justify-content: center;
 }
 .text3 {
-  font-size: 7vw;
+  font-size: 4vw;
   color: white;
   margin-top: 6vw;
+  word-spacing: 1vw;
+  letter-spacing: 0.5vw;
 }
 .inside-box2 {
   display: flex;
@@ -128,9 +130,11 @@ section {
   margin-top: 4vw;
 }
 .text4 {
-  font-size: 7vw;
+  font-size: 4vw;
   color: white;
   margin-top: 4vw;
+  word-spacing: 1vw;
+  letter-spacing: 0.5vw;
 }
 
 /* .screen31 {
@@ -262,9 +266,11 @@ section {
   margin-top: 8vw;
 }
 .text5 {
-  font-size: 7vw;
+  font-size: 4vw;
   color: white;
   margin-top: 5vw;
+  word-spacing: 1vw;
+  letter-spacing: 0.5vw;
 }
 .canvas {
   background-repeat: no-repeat;
