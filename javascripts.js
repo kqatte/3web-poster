@@ -297,7 +297,7 @@ function initCanvas() {
   ctx.scale(dpr, dpr)
 
   ctx.strokeStyle = '#740606'
-  ctx.lineWidth = 5
+  ctx.lineWidth = 12
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect()
