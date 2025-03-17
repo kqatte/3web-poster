@@ -289,9 +289,12 @@ function initCanvas() {
     console.error('2D context is not supported!')
     return
   }
-
-  canvas.width = window.innerWidth * 0.8
-  canvas.height = window.innerHeight * 0.6
+  const dpr = window.devicePixelRatio || 1
+  canvas.style.width = '100vw'
+  canvas.style.height = '65vw'
+  canvas.width = Math.floor(window.innerWidth * dpr)
+  canvas.height = Math.floor(window.innerWidth * 0.65 * dpr)
+  ctx.scale(dpr, dpr)
 
   ctx.strokeStyle = '#740606'
   ctx.lineWidth = 5
@@ -330,74 +333,6 @@ function initCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
   })
 }
-
-// function initCanvas() {
-//   var canvas = document.getElementById('canvas')
-//   var ctx = canvas.getContext('2d')
-//   ctx.strokeStyle = '#740606'
-//   ctx.lineWidth = '5'
-
-//   function getMousePos(canvas, evt) {
-//     var rect = canvas.getBoundingClientRect()
-//     return {
-//       x: evt.clientX - rect.left,
-//       y: evt.clientY - rect.top
-//     }
-//   }
-
-//   function mouseMove(evt) {
-//     var mousePos = getMousePos(canvas, evt)
-//     ctx.lineTo(mousePos.x, mousePos.y)
-//     ctx.stroke()
-//   }
-
-//   canvas.addEventListener('mousedown', function (evt) {
-//     var mousePos = getMousePos(canvas, evt)
-//     ctx.beginPath()
-//     ctx.moveTo(mousePos.x, mousePos.y)
-//     evt.preventDefault()
-//     canvas.addEventListener('mousemove', mouseMove, false)
-//   })
-
-//   canvas.addEventListener(
-//     'mouseup',
-//     function () {
-//       canvas.removeEventListener('mousemove', mouseMove, false)
-//     },
-//     false
-//   )
-
-//   document.getElementById('clear').addEventListener(
-//     'click',
-//     function () {
-//       ctx.clearRect(0, 0, canvas.width, canvas.height)
-//     },
-//     false
-//   )
-
-//   var size = [1, 3, 5, 10, 15, 20]
-//   var sizeNames = ['default', 'three', 'five', 'ten', 'fifteen', 'twenty']
-
-//   // function listener(i) {
-//   //   document.getElementById(colors[i]).addEventListener(
-//   //     'click',
-//   //     function () {
-//   //       ctx.strokeStyle = colors[i]
-//   //     },
-//   //     false
-//   //   )
-//   // }
-
-//   // function fontSizes(i) {
-//   //   document.getElementById(sizeNames[i]).addEventListener(
-//   //     'click',
-//   //     function () {
-//   //       ctx.setLineWidth(size[i])
-//   //     },
-//   //     false
-//   //   )
-//   // }
-// }
 
 // ПОДВАЛ
 document.addEventListener('DOMContentLoaded', () => {
