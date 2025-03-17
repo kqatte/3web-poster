@@ -159,6 +159,7 @@ section {
   position: absolute;
   margin-left: 5vw;
   margin-top: 4vw;
+  z-index: -1;
 }
 #silhouette5 {
   width: 11vw;
@@ -181,6 +182,7 @@ section {
   position: absolute;
   margin-left: 43vw;
   margin-top: 0vw;
+  z-index: -1;
 }
 #silhouette4 {
   width: 15.5vw;
@@ -202,6 +204,7 @@ section {
   position: absolute;
   margin-left: 85vw;
   margin-top: 0vw;
+  z-index: -1;
 }
 #silhouette2 {
   width: 15.5vw;
@@ -223,6 +226,7 @@ section {
   position: absolute;
   margin-left: 20vw;
   margin-top: 0vw;
+  z-index: -1;
 }
 #silhouette3 {
   width: 15.5vw;
@@ -244,6 +248,7 @@ section {
   position: absolute;
   margin-left: 64vw;
   margin-top: 0vw;
+  z-index: -1;
 }
 #silhouette1 {
   width: 15.5vw;
