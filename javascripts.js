@@ -25,7 +25,7 @@ function BackgroundMove() {
 
 // ВТОРОЙ ЭКРАН
 document.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('.elementphoto')
+  const images = document.querySelectorAll('.elementik')
 
   images.forEach((image, index) => {
     image.addEventListener('click', () => {
@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500)
       }
     })
+  })
+})
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.getElementById('readybutton')
+  const targetObject = document.getElementById('backgroundlines')
+  button.addEventListener('click', () => {
+    targetObject.style.opacity = '1'
   })
 })
 // ТРЕТИЙ ЭКРАН

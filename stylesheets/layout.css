@@ -83,7 +83,7 @@ section {
 .text3 {
   font-size: 4vw;
   color: white;
-  margin-top: 6vw;
+  margin-top: 7vw;
   word-spacing: 1vw;
   letter-spacing: 0.5vw;
 }
@@ -91,33 +91,55 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -2vw;
 }
-
+#backgroundlines {
+  background-image: url(../images/бэк.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 56vw;
+  z-index: -100;
+  margin-top: -2.9vw;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 .screen21 {
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin-top: 4vw;
-  width: 70vw;
-}
-.image-container {
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 705w;
+  height: 53.75vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70vw;
-  cursor: pointer;
 }
-.elementphoto {
+.puzzle-grid {
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -0.5vw;
-  height: 24vw;
-  width: 16.9vw;
+  width: 75vw;
+  height: 53.75vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.elementik {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26.875vw;
+  width: 18.125vw;
   transition: transform 0.2s ease-in-out;
+}
+#readybutton {
+  position: absolute;
+  height: 4vw;
+  width: 11.8vw;
+  margin-top: 54vw;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
 /* ТРЕТИЙ ЭКРАН */
@@ -127,7 +149,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 4vw;
+  margin-top: 6vw;
 }
 .text4 {
   font-size: 4vw;
@@ -137,16 +159,6 @@ section {
   letter-spacing: 0.5vw;
 }
 
-/* .screen31 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 4vw;
-  align-items: center;
-  width: 80vw;
-} */
 .inside-box {
   height: 48vw;
 }
@@ -351,6 +363,7 @@ section {
   height: 7vw;
   width: 14vw;
   cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* ПОДВАЛ */
