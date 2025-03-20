@@ -456,11 +456,11 @@ section {
   background-image: url(../images/fakebutton.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4.5vw;
-  width: 9vw;
+  height: 2.5vw;
+  width: 5vw;
   position: absolute;
   margin-top: -39.5vw;
-  margin-left: 20vw;
+  margin-left: 21.2vw;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
