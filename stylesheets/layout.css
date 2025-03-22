@@ -180,7 +180,7 @@ section {
 }
 
 #silhouette5header {
-  margin-left: 22vw;
+  margin-left: 24vw;
   margin-top: 4vw;
   cursor: pointer;
 }
@@ -197,8 +197,8 @@ section {
   z-index: -1;
 }
 #silhouette4 {
-  width: 15.5vw;
-  height: 24vw;
+  width: 15vw;
+  height: 23vw;
   position: absolute;
 }
 #silhouette4header {
@@ -383,7 +383,7 @@ section {
   width: 25vw;
   height: 40vw;
   position: absolute;
-  margin-top: -40vw;
+  margin-top: -42vw;
   margin-left: 5vw;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -410,7 +410,7 @@ section {
   width: 12vw;
   height: 19vw;
   position: absolute;
-  margin-top: -55vw;
+  margin-top: -56vw;
   margin-left: 20vw;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
