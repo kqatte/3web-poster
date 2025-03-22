@@ -1,0 +1,41 @@
+@media screen and (max-width: 414px) {
+  .screen1,
+  .screen2,
+  .screen3,
+  .screen4,
+  .basement,
+  .inside-box,
+  .canvas,
+  .screen21,
+  #backgroundlines {
+    display: none;
+  }
+  .psevdosection1 {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+  .psevdoimage1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/psevdobackground.svg);
+    height: 140vw;
+    width: 100vw;
+  }
+  .psevdotext1 {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    margin-top: 30vw;
+    text-align: center;
+  }
+  .psevdobackground1 {
+    background-image: url(../images/psevdobackground1.svg);
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 200vw;
+  }
+}

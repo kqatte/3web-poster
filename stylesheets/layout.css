@@ -74,6 +74,10 @@ section {
   animation: shake 0.5s infinite;
 }
 
+/* ПЕРВАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
+.psevdosection1 {
+  display: none;
+}
 /* ВТОРОЙ ЭКРАН */
 .screen2 {
   display: flex;
