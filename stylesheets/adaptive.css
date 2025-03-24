@@ -72,6 +72,7 @@
 .psevdoscreen2 {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .psevdotext3 {
@@ -104,3 +105,10 @@
   height: 58vw;
   transition: transform 0.2s ease-in-out;
 }
+
+.psevdoelement3,
+.psevdoelement4 {
+  margin-top: -0.3vw;
+}
+
+/* ТРЕТИЙ ЭКРАН */

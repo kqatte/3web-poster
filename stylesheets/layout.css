@@ -283,6 +283,11 @@ section {
   cursor: pointer;
 }
 
+/* ТРЕТЬЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
+.psevdoscreen3,
+.psevdoinsidebox {
+  display: none;
+}
 /* ЧЕТВЕРТЫЙ ЭКРАН */
 .screen4 {
   background-repeat: no-repeat;
