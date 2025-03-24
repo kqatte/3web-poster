@@ -402,3 +402,32 @@ function PsevdoBackgroundMove() {
     hint.style.opacity = '0'
   })
 }
+
+// АДАПТИВКА ВТОРОЙ ЭКРАН
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.psevdoelementik')
+
+  images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+      if (index < images.length - 1) {
+        const nextImage = images[index + 1]
+
+        const imageRect = image.getBoundingClientRect()
+        const nextImageRect = nextImage.getBoundingClientRect()
+
+        const deltaX = nextImageRect.left - imageRect.left
+        const deltaY = nextImageRect.top - imageRect.top
+
+        image.style.transform = `translate(${deltaX}px, ${deltaY}px)`
+        nextImage.style.transform = `translate(${-deltaX}px, ${-deltaY}px)`
+
+        setTimeout(() => {
+          image.parentNode.insertBefore(nextImage, image)
+
+          image.style.transform = ''
+          nextImage.style.transform = ''
+        }, 500)
+      }
+    })
+  })
+})
