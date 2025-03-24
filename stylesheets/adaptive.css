@@ -1,4 +1,4 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .screen1,
   .screen2,
   .screen3,
@@ -20,15 +20,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/psevdobackground.svg);
-    height: 140vw;
+    height: 200vw;
     width: 100vw;
+    z-index: -1;
+    transition: transform 1s ease;
   }
   .psevdotext1 {
     position: absolute;
     color: white;
-    font-size: 3vw;
-    margin-top: 30vw;
+    font-size: 9vw;
+    margin-top: 100vw;
     text-align: center;
+    letter-spacing: 0.5vw;
+    margin-left: 4vw;
   }
   .psevdobackground1 {
     background-image: url(../images/psevdobackground1.svg);
@@ -37,5 +41,28 @@
     background-size: cover;
     width: 100vw;
     height: 200vw;
+    position: absolute;
   }
+}
+.psevdotext2 {
+  position: absolute;
+  margin-left: 20vw;
+  color: white;
+  margin-top: 84vw;
+  font-size: 16vw;
+  z-index: -2;
+  animation: shake 0.5s infinite;
+}
+.psevdohint1 {
+  background-image: url(../images/hint.svg);
+  z-index: 2;
+  height: 10vw;
+  width: 8vw;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  margin-top: 87vw;
+  margin-left: 47vw;
 }

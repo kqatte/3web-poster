@@ -42,3 +42,9 @@
   transform: scale(1.07);
   filter: grayscale(50%) brightness(70%);
 }
+
+/* ПЕРВЫЙ ЭКРАН АДАПТИВКА  */
+.psevdohint1:hover {
+  transform: scale(1.07);
+  filter: grayscale(50%) brightness(70%);
+}

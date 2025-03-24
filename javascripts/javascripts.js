@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Draggable3()
   Draggable4()
   Draggable5()
+  PsevdoBackgroundMove()
 })
 
 // ПЕРВЫЙ ЭКРАН
@@ -388,3 +389,16 @@ document.addEventListener('DOMContentLoaded', () => {
     secondaryObject.style.opacity = '1'
   })
 })
+
+// АДАПТИВКА ПЕРВЫЙ ЭКРАН
+
+function PsevdoBackgroundMove() {
+  document.querySelector('.psevdohint1').addEventListener('click', () => {
+    const shtori = document.querySelector('.psevdoimage1')
+    const firstText = document.querySelector('.psevdotext1')
+    const hint = document.querySelector('.psevdohint1')
+    shtori.style.transform = 'translateY(-200vw)'
+    firstText.style.opacity = '0'
+    hint.style.opacity = '0'
+  })
+}
