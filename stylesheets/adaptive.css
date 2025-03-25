@@ -114,3 +114,20 @@
 }
 
 /* ТРЕТИЙ ЭКРАН */
+
+.psevdoscreen3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6vw;
+}
+.psevdotext4 {
+  font-size: 4vw;
+  color: white;
+  margin-top: 4vw;
+  word-spacing: 1vw;
+  letter-spacing: 0.5vw;
+}
+/* ОПЯТЬ НЕ РАБОТАЕТ ДИСПЛЕЙ НАН */
