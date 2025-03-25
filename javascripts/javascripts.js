@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const element = document.getElementById('psevdoscreen2')
   function checkScreenWidth() {
-    if (window.innerWidth <= 414) {
+    if (window.innerWidth <= 768) {
       element.style.display = 'block'
     } else {
       element.style.display = 'none'
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const element = document.getElementById('psevdosection2')
   function checkScreenWidth() {
-    if (window.innerWidth <= 414) {
+    if (window.innerWidth <= 768) {
       element.style.display = 'block'
     } else {
       element.style.display = 'none'
