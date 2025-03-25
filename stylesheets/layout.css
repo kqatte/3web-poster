@@ -147,10 +147,10 @@ section {
   cursor: pointer;
 }
 /* ВТОРАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
-.psevdoscreen2,
-.psevdosection2 {
+/* #psevdoscreen2,
+#psevdosection2 {
   display: none;
-}
+} */
 
 /* ТРЕТИЙ ЭКРАН */
 .screen3 {

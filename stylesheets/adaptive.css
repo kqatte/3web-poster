@@ -69,27 +69,29 @@
 }
 
 /* ВТОРОЙ ЭКРАН */
-.psevdoscreen2 {
-  display: flex;
-  justify-content: center;
+#psevdoscreen2 {
+  display: block;
   position: relative;
+  width: 100vw;
 }
 
-.psevdotext3 {
+#psevdotext3 {
   font-size: 6vw;
   color: white;
   word-spacing: 1vw;
   letter-spacing: 0.5vw;
   margin-top: 15vw;
+  margin-left: 11vw;
 }
 
-.psevdosection2 {
+#psevdosection2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
-.psevdopuzzle {
+#psevdopuzzle {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;

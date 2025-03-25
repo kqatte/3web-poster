@@ -431,3 +431,30 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 })
+
+// АДАПТИВ ВТОРОЙ ЭКРАН
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('psevdoscreen2')
+  function checkScreenWidth() {
+    if (window.innerWidth <= 414) {
+      element.style.display = 'block'
+    } else {
+      element.style.display = 'none'
+    }
+  }
+  checkScreenWidth()
+  window.addEventListener('resize', checkScreenWidth)
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('psevdosection2')
+  function checkScreenWidth() {
+    if (window.innerWidth <= 414) {
+      element.style.display = 'block'
+    } else {
+      element.style.display = 'none'
+    }
+  }
+  checkScreenWidth()
+  window.addEventListener('resize', checkScreenWidth)
+})
