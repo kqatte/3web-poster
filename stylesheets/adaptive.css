@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px) {
   .screen1,
   .screen2,
   .screen3,
@@ -44,90 +44,156 @@
     height: 200vw;
     position: absolute;
   }
-}
-.psevdotext2 {
-  position: absolute;
-  margin-left: 14vw;
-  color: white;
-  margin-top: 84vw;
-  font-size: 20vw;
-  z-index: -2;
-  animation: shake 0.5s infinite;
-}
-.psevdohint1 {
-  background-image: url(../images/hint.svg);
-  z-index: 2;
-  height: 12vw;
-  width: 10vw;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-  margin-top: 85vw;
-  margin-left: 47vw;
-}
 
-/* ВТОРОЙ ЭКРАН */
-#psevdoscreen2 {
-  display: block;
-  position: relative;
-  width: 100vw;
-}
+  .psevdotext2 {
+    position: absolute;
+    margin-left: 14vw;
+    color: white;
+    margin-top: 84vw;
+    font-size: 20vw;
+    z-index: -2;
+    animation: shake 0.5s infinite;
+  }
+  .psevdohint1 {
+    background-image: url(../images/hint.svg);
+    z-index: 2;
+    height: 12vw;
+    width: 10vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    margin-top: 85vw;
+    margin-left: 47vw;
+  }
 
-#psevdotext3 {
-  font-size: 6vw;
-  color: white;
-  word-spacing: 1vw;
-  letter-spacing: 0.5vw;
-  margin-top: 15vw;
-  margin-left: 11vw;
-}
+  /* ВТОРОЙ ЭКРАН */
+  .psevdoscreen2 {
+    display: flex;
+    position: relative;
+    width: 100vw;
+  }
 
-#psevdosection2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
+  .psevdotext3 {
+    font-size: 5vw;
+    color: white;
+    word-spacing: 1vw;
+    letter-spacing: 0.5vw;
+    margin-top: 15vw;
+    margin-left: 16vw;
+  }
 
-#psevdopuzzle {
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 5vw;
-}
-.psevdoelementik {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 40.5vw;
-  height: 58vw;
-  transition: transform 0.2s ease-in-out;
-}
+  .psevdosection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
 
-.psevdoelement3,
-.psevdoelement4 {
-  margin-top: -0.3vw;
-}
+  .psevdopuzzle {
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vw;
+  }
+  .psevdoelementik {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40.5vw;
+    height: 58vw;
+    transition: transform 0.2s ease-in-out;
+  }
 
-/* ТРЕТИЙ ЭКРАН */
+  .psevdoelement3,
+  .psevdoelement4 {
+    margin-top: -0.3vw;
+  }
 
-.psevdoscreen3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 6vw;
+  /* ТРЕТИЙ ЭКРАН */
+  .psevdoscreen3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6vw;
+  }
+  .psevdotext4 {
+    font-size: 5vw;
+    color: white;
+    margin-top: 4vw;
+    word-spacing: 1vw;
+    letter-spacing: 0.5vw;
+  }
+  .psevdoinsidebox {
+    height: 100vw;
+    display: flex;
+  }
+  .psevdocontour1 {
+    background-image: url(../images/contour1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22vw;
+    height: 51vw;
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 8vw;
+    z-index: -1;
+  }
+  #psevdosilhouette1header {
+    margin-left: 57vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+  #psevdosilhouette1 {
+    width: 33vw;
+    height: 66vw;
+    position: absolute;
+  }
+  .psevdocontour2 {
+    background-image: url(../images/contour4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33vw;
+    height: 52vw;
+    position: absolute;
+    margin-left: 55vw;
+    margin-top: 65vw;
+    z-index: -1;
+  }
+  #psevdosilhouette2header {
+    margin-left: -48vw;
+    margin-top: 65vw;
+    cursor: pointer;
+  }
+  #psevdosilhouette2 {
+    width: 31vw;
+    height: 50vw;
+    position: absolute;
+  }
+  .psevdocontour3 {
+    background-image: url(../images/contour5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vw;
+    height: 53vw;
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 123vw;
+    z-index: -1;
+  }
+  #psevdosilhouette3header {
+    margin-left: 50vw;
+    margin-top: 120vw;
+    cursor: pointer;
+  }
+  #psevdosilhouette3 {
+    width: 35vw;
+    height: 55vw;
+    position: absolute;
+  }
 }
-.psevdotext4 {
-  font-size: 4vw;
-  color: white;
-  margin-top: 4vw;
-  word-spacing: 1vw;
-  letter-spacing: 0.5vw;
-}
-/* ОПЯТЬ НЕ РАБОТАЕТ ДИСПЛЕЙ НАН */

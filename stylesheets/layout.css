@@ -147,7 +147,10 @@ section {
   cursor: pointer;
 }
 /* ВТОРАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
-/* В ДЖАВЕ  */
+.psevdoscreen2,
+.psevdosection2 {
+  display: none;
+}
 
 /* ТРЕТИЙ ЭКРАН */
 .screen3 {
@@ -285,6 +288,9 @@ section {
 .psevdoinsidebox {
   display: none;
 }
+
+/* НЕ РАБОТАЕТ */
+
 /* ЧЕТВЕРТЫЙ ЭКРАН */
 .screen4 {
   background-repeat: no-repeat;
@@ -427,6 +433,15 @@ section {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+#nastyusha {
+  width: 12vw;
+  height: 19vw;
+  position: absolute;
+  margin-top: -55vw;
+  margin-left: 58vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 #hintbase1 {
   background-image: url(../images/hint.svg);
   background-repeat: no-repeat;
@@ -473,6 +488,19 @@ section {
   position: absolute;
   margin-top: -39.5vw;
   margin-left: 21.2vw;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#fakebutton2 {
+  background-image: url(../images/fakebutton2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2.5vw;
+  width: 5vw;
+  position: absolute;
+  margin-top: -39vw;
+  margin-left: 62vw;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }

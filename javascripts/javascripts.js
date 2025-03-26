@@ -389,6 +389,17 @@ document.addEventListener('DOMContentLoaded', () => {
     secondaryObject.style.opacity = '1'
   })
 })
+document.addEventListener('DOMContentLoaded', () => {
+  const mainObject = document.getElementById('fakebutton2')
+  const secondaryObject = document.getElementById('nastyusha')
+
+  mainObject.addEventListener('click', () => {
+    mainObject.style.opacity = '0'
+    mainObject.style.pointerEvents = 'none'
+
+    secondaryObject.style.opacity = '1'
+  })
+})
 
 // АДАПТИВКА ПЕРВЫЙ ЭКРАН
 
@@ -430,31 +441,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
-})
-
-// АДАПТИВ ВТОРОЙ ЭКРАН
-document.addEventListener('DOMContentLoaded', () => {
-  const element = document.getElementById('psevdoscreen2')
-  function checkScreenWidth() {
-    if (window.innerWidth <= 768) {
-      element.style.display = 'block'
-    } else {
-      element.style.display = 'none'
-    }
-  }
-  checkScreenWidth()
-  window.addEventListener('resize', checkScreenWidth)
-})
-
-document.addEventListener('DOMContentLoaded', () => {
-  const element = document.getElementById('psevdosection2')
-  function checkScreenWidth() {
-    if (window.innerWidth <= 768) {
-      element.style.display = 'block'
-    } else {
-      element.style.display = 'none'
-    }
-  }
-  checkScreenWidth()
-  window.addEventListener('resize', checkScreenWidth)
 })
