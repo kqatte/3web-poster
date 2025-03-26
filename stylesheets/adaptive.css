@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1440px) {
   .screen1,
   .screen2,
   .screen3,
@@ -130,7 +130,7 @@
     letter-spacing: 0.5vw;
   }
   .psevdoinsidebox {
-    height: 100vw;
+    height: 180vw;
     display: flex;
   }
   .psevdocontour1 {
@@ -150,7 +150,7 @@
     cursor: pointer;
   }
   #psevdosilhouette1 {
-    width: 34vw;
+    width: 32vw;
     height: 68vw;
     position: absolute;
   }
@@ -188,12 +188,146 @@
   }
   #psevdosilhouette3header {
     margin-left: 48vw;
-    margin-top: 120vw;
+    margin-top: 123vw;
     cursor: pointer;
   }
   #psevdosilhouette3 {
-    width: 36vw;
-    height: 57vw;
+    width: 34vw;
+    height: 52vw;
     position: absolute;
+  }
+
+  /* ЧЕТВЕРТЫЙ ЭКРАН */
+
+  .psevdoscreen4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8vw;
+  }
+  .psevdotext5 {
+    font-size: 5vw;
+    color: white;
+    margin-top: 5vw;
+    word-spacing: 1vw;
+    letter-spacing: 0.5vw;
+  }
+  .psevdocanvas {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: crosshair;
+    height: 140vw;
+    margin-top: -5vw;
+  }
+  #psevdocanvas {
+    position: absolute;
+    width: 100vw;
+    height: 130vw;
+    z-index: 10;
+    margin-top: 0vw;
+  }
+  .psevdolabyrinth {
+    background-image: url(../images/psevdolabyrinth.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 79vw;
+    height: 117vw;
+    margin-top: 3vw;
+  }
+  #psevdoclear {
+    position: absolute;
+    margin-top: 130vw;
+    z-index: 10;
+    height: 12vw;
+    width: 24vw;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  /* ПСЕВДОПОДВАЛ */
+  .psevdobasement {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    margin-top: 10vw;
+    height: 170vw;
+  }
+  .psevdoseats {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/psevdoseats.svg);
+    width: 100vw;
+    height: 177vw;
+    position: absolute;
+  }
+  #psevdohintbase1 {
+    background-image: url(../images/hint.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11vw;
+    width: 9vw;
+    position: absolute;
+    margin-top: 100vw;
+    margin-left: 7vw;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  #psevdohintbase2 {
+    background-image: url(../images/hint.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11vw;
+    width: 9vw;
+    position: absolute;
+    margin-top: 67vw;
+    margin-left: 45vw;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  #psevdohintbase3 {
+    background-image: url(../images/hint.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11vw;
+    width: 9vw;
+    position: absolute;
+    margin-top: 100vw;
+    margin-left: 80vw;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  #psevdoanna {
+    width: 30vw;
+    height: 48vw;
+    position: absolute;
+    margin-top: 75vw;
+    margin-left: 0vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  #psevdokate {
+    width: 25vw;
+    height: 47vw;
+    position: absolute;
+    margin-top: 40vw;
+    margin-left: 35vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  #psevdokamila {
+    width: 25vw;
+    height: 47vw;
+    position: absolute;
+    margin-top: 70vw;
+    margin-left: 70vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
 }

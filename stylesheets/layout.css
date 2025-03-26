@@ -289,8 +289,6 @@ section {
   display: none;
 }
 
-/* НЕ РАБОТАЕТ */
-
 /* ЧЕТВЕРТЫЙ ЭКРАН */
 .screen4 {
   background-repeat: no-repeat;
@@ -312,7 +310,6 @@ section {
   background-size: cover;
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   align-items: center;
   position: relative;
   cursor: crosshair;
@@ -382,6 +379,12 @@ section {
   width: 14vw;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ЧЕТВЕРТАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
+.psevdoscreen4,
+.psevdocanvas {
+  display: none;
 }
 
 /* ПОДВАЛ */
@@ -503,4 +506,9 @@ section {
   margin-left: 62vw;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ПСЕВДОПОДВАЛ */
+.psevdobasement {
+  display: none;
 }

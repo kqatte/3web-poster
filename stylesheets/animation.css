@@ -43,8 +43,26 @@
   filter: grayscale(50%) brightness(70%);
 }
 
-/* ПЕРВЫЙ ЭКРАН АДАПТИВКА  */
+/* АДАПТИВКИ  */
 .psevdohint1:hover {
+  transform: scale(1.07);
+  filter: grayscale(50%) brightness(70%);
+}
+
+#psevdoclear:hover {
+  transform: scale(1.07);
+  filter: grayscale(50%) brightness(70%);
+}
+#psevdohintbase1:hover {
+  transform: scale(1.07);
+  filter: grayscale(50%) brightness(70%);
+}
+
+#psevdohintbase2:hover {
+  transform: scale(1.07);
+  filter: grayscale(50%) brightness(70%);
+}
+#psevdohintbase3:hover {
   transform: scale(1.07);
   filter: grayscale(50%) brightness(70%);
 }
