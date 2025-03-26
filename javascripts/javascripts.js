@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   Draggable4()
   Draggable5()
   PsevdoBackgroundMove()
+  PsevdoDraggable1()
+  PsevdoDraggable2()
+  PsevdoDraggable3()
 })
 
 // ПЕРВЫЙ ЭКРАН
@@ -62,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ТРЕТИЙ ЭКРАН
 function Draggable1() {
   dragElement(document.getElementById('silhouette5'))
-
   function dragElement(elmnt) {
     let pos1 = 0,
       pos2 = 0,
@@ -73,31 +75,24 @@ function Draggable1() {
     } else {
       elmnt.onmousedown = dragMouseDown
     }
-
     function dragMouseDown(e) {
       e = e || window.event
       e.preventDefault()
-
       pos3 = e.clientX
       pos4 = e.clientY
       document.onmouseup = closeDragElement
-
       document.onmousemove = elementDrag
     }
-
     function elementDrag(e) {
       e = e || window.event
       e.preventDefault()
-
       pos1 = pos3 - e.clientX
       pos2 = pos4 - e.clientY
       pos3 = e.clientX
       pos4 = e.clientY
-
       elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
       elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
     }
-
     function closeDragElement() {
       document.onmouseup = null
       document.onmousemove = null
@@ -417,24 +412,18 @@ function PsevdoBackgroundMove() {
 // АДАПТИВКА ВТОРОЙ ЭКРАН
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.psevdoelementik')
-
   images.forEach((image, index) => {
     image.addEventListener('click', () => {
       if (index < images.length - 1) {
         const nextImage = images[index + 1]
-
         const imageRect = image.getBoundingClientRect()
         const nextImageRect = nextImage.getBoundingClientRect()
-
         const deltaX = nextImageRect.left - imageRect.left
         const deltaY = nextImageRect.top - imageRect.top
-
         image.style.transform = `translate(${deltaX}px, ${deltaY}px)`
         nextImage.style.transform = `translate(${-deltaX}px, ${-deltaY}px)`
-
         setTimeout(() => {
           image.parentNode.insertBefore(nextImage, image)
-
           image.style.transform = ''
           nextImage.style.transform = ''
         }, 500)
@@ -442,3 +431,112 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 })
+// АДАПТИВКА ТРЕТИЙ ЭКРАН
+function PsevdoDraggable1() {
+  dragElement(document.getElementById('psevdosilhouette1'))
+  function dragElement(elmnt) {
+    let pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0
+    if (document.getElementById(elmnt.id + 'header')) {
+      document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
+    } else {
+      elmnt.onmousedown = dragMouseDown
+    }
+    function dragMouseDown(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos3 = e.clientX
+      pos4 = e.clientY
+      document.onmouseup = closeDragElement
+      document.onmousemove = elementDrag
+    }
+    function elementDrag(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos1 = pos3 - e.clientX
+      pos2 = pos4 - e.clientY
+      pos3 = e.clientX
+      pos4 = e.clientY
+      elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
+      elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
+    }
+    function closeDragElement() {
+      document.onmouseup = null
+      document.onmousemove = null
+    }
+  }
+}
+function PsevdoDraggable2() {
+  dragElement(document.getElementById('psevdosilhouette2'))
+  function dragElement(elmnt) {
+    let pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0
+    if (document.getElementById(elmnt.id + 'header')) {
+      document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
+    } else {
+      elmnt.onmousedown = dragMouseDown
+    }
+    function dragMouseDown(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos3 = e.clientX
+      pos4 = e.clientY
+      document.onmouseup = closeDragElement
+      document.onmousemove = elementDrag
+    }
+    function elementDrag(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos1 = pos3 - e.clientX
+      pos2 = pos4 - e.clientY
+      pos3 = e.clientX
+      pos4 = e.clientY
+      elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
+      elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
+    }
+    function closeDragElement() {
+      document.onmouseup = null
+      document.onmousemove = null
+    }
+  }
+}
+function PsevdoDraggable1() {
+  dragElement(document.getElementById('psevdosilhouette3'))
+  function dragElement(elmnt) {
+    let pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0
+    if (document.getElementById(elmnt.id + 'header')) {
+      document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown
+    } else {
+      elmnt.onmousedown = dragMouseDown
+    }
+    function dragMouseDown(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos3 = e.clientX
+      pos4 = e.clientY
+      document.onmouseup = closeDragElement
+      document.onmousemove = elementDrag
+    }
+    function elementDrag(e) {
+      e = e || window.event
+      e.preventDefault()
+      pos1 = pos3 - e.clientX
+      pos2 = pos4 - e.clientY
+      pos3 = e.clientX
+      pos4 = e.clientY
+      elmnt.style.top = elmnt.offsetTop - pos2 + 'px'
+      elmnt.style.left = elmnt.offsetLeft - pos1 + 'px'
+    }
+    function closeDragElement() {
+      document.onmouseup = null
+      document.onmousemove = null
+    }
+  }
+}

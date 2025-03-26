@@ -146,12 +146,12 @@
   }
   #psevdosilhouette1header {
     margin-left: 57vw;
-    margin-top: 2vw;
+    margin-top: 0vw;
     cursor: pointer;
   }
   #psevdosilhouette1 {
-    width: 33vw;
-    height: 66vw;
+    width: 34vw;
+    height: 68vw;
     position: absolute;
   }
   .psevdocontour2 {
@@ -187,13 +187,13 @@
     z-index: -1;
   }
   #psevdosilhouette3header {
-    margin-left: 50vw;
+    margin-left: 48vw;
     margin-top: 120vw;
     cursor: pointer;
   }
   #psevdosilhouette3 {
-    width: 35vw;
-    height: 55vw;
+    width: 36vw;
+    height: 57vw;
     position: absolute;
   }
 }
