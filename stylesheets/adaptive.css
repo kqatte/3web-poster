@@ -10,6 +10,15 @@
   #backgroundlines {
     display: none;
   }
+
+  /* ПРЕЛОАДЕР */
+  .preloadertext {
+    font-size: 9vw;
+    margin-top: 35vw;
+  }
+  .spinner {
+    margin-top: -20vw;
+  }
   /* ПЕРВЫЙ ЭКРАН */
   .psevdosection1 {
     display: flex;
