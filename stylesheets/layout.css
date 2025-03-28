@@ -313,7 +313,7 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
-  cursor: url(../images/cursordraw.png), crosshair;
+  cursor: url(../images/cursorcrosshair.png), crosshair;
   height: 65vw;
   margin-top: -2vw;
 }
