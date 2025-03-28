@@ -21,13 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('content')
 
   // Имитация задержки загрузки (например, 3 секунды)
-  setTimeout(() => {
-    // Скрываем прелоадер
+  // setTimeout(() => {
+  // Скрываем прелоадер
+  preloader.style.display = 'none'
+  window.addEventListener('load', () => {
     preloader.style.display = 'none'
-
-    // Показываем основной контент
     content.style.display = 'block'
-  }, 3000) // Задержка в миллисекундах (3000 = 3 секунды)
+  })
+  //   // Показываем основной контент
+  //   content.style.display = 'block'
+  // }, 3000) // Задержка в миллисекундах (3000 = 3 секунды)
 })
 // ПЕРВЫЙ ЭКРАН
 function BackgroundMove() {
