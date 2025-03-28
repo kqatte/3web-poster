@@ -9,167 +9,176 @@
     <link rel="icon" href="images/icon.png" sizes="16x16" type="image/png" />
   </head>
   <body>
+    <!-- ПРЕЛОАДЕР -->
+    <div id="preloader">
+      <div class="spinner"></div>
+      <div class="shtori1"></div>
+      <div class="shtori2"></div>
+    </div>
+
     <!-- ПЕРВЫЙ ЭКРАН -->
-    <section class="screen1">
-      <div class="image1"></div>
-      <p class="text1">НАЖМИ, ЧТОБЫ НАЧАТЬ СПЕКТАКЛЬ</p>
-      <div class="image2"></div>
-      <div class="hint1"></div>
-      <div class="background1"></div>
-      <p class="text2">А ЕСЛИ...</p>
-    </section>
+    <div id="content" style="display: none">
+      <section class="screen1">
+        <div class="image1"></div>
+        <p class="text1">НАЖМИ, ЧТОБЫ НАЧАТЬ СПЕКТАКЛЬ</p>
+        <div class="image2"></div>
+        <div class="hint1"></div>
+        <div class="background1"></div>
+        <p class="text2">А ЕСЛИ...</p>
+      </section>
 
-    <!-- ПЕРВАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
-    <section class="psevdosection1">
-      <div class="psevdoimage1"></div>
-      <p class="psevdotext1">НАЖМИ, ЧТОБЫ <br />НАЧАТЬ СПЕКТАКЛЬ</p>
-      <div class="psevdohint1"></div>
-      <div class="psevdobackground1"></div>
-      <p class="psevdotext2">А ЕСЛИ...</p>
-    </section>
+      <!-- ПЕРВАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
+      <section class="psevdosection1">
+        <div class="psevdoimage1"></div>
+        <p class="psevdotext1">НАЖМИ, ЧТОБЫ <br />НАЧАТЬ СПЕКТАКЛЬ</p>
+        <div class="psevdohint1"></div>
+        <div class="psevdobackground1"></div>
+        <p class="psevdotext2">А ЕСЛИ...</p>
+      </section>
 
-    <!-- ВТОРОЙ ЭКРАН -->
-    <section class="screen2">
-      <p class="text3">НАЖМИ И СОБЕРИ ФОТОГРАФИЮ</p>
-    </section>
-    <section class="inside-box2">
-      <div id="backgroundlines"></div>
-      <section class="screen21">
-        <div class="puzzle-grid">
-          <img class="elementik elementphoto1" src="images/element2.svg" />
-          <img class="elementik elementphoto2" src="images/element1.svg" />
-          <img class="elementik elementphoto3" src="images/element4.svg" />
-          <img class="elementik elementphoto4" src="images/element3.svg" />
-          <img class="elementik elementphoto5" src="images/element6.svg" />
-          <img class="elementik elementphoto6" src="images/element5.svg" />
-          <img class="elementik elementphoto7" src="images/element8.svg" />
-          <img class="elementik elementphoto8" src="images/element7.svg" />
-          <img id="readybutton" src="images/ready.svg" />
+      <!-- ВТОРОЙ ЭКРАН -->
+      <section class="screen2">
+        <p class="text3">НАЖМИ И СОБЕРИ ФОТОГРАФИЮ</p>
+      </section>
+      <section class="inside-box2">
+        <div id="backgroundlines"></div>
+        <section class="screen21">
+          <div class="puzzle-grid">
+            <img class="elementik elementphoto1" src="images/element2.svg" />
+            <img class="elementik elementphoto2" src="images/element1.svg" />
+            <img class="elementik elementphoto3" src="images/element4.svg" />
+            <img class="elementik elementphoto4" src="images/element3.svg" />
+            <img class="elementik elementphoto5" src="images/element6.svg" />
+            <img class="elementik elementphoto6" src="images/element5.svg" />
+            <img class="elementik elementphoto7" src="images/element8.svg" />
+            <img class="elementik elementphoto8" src="images/element7.svg" />
+            <img id="readybutton" src="images/ready.svg" />
+          </div>
+        </section>
+      </section>
+
+      <!-- ВТОРАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
+      <section class="psevdoscreen2">
+        <p class="psevdotext3">СОЕДИНИ ФОТОГРАФИЮ</p>
+      </section>
+      <section class="psevdosection2">
+        <div class="psevdopuzzle">
+          <img
+            class="psevdoelementik psevdoelement2"
+            src="images/psevdoelement2.svg"
+          />
+          <img
+            class="psevdoelementik psevdoelement1"
+            src="images/psevdoelement1.svg"
+          />
+          <img
+            class="psevdoelementik psevdoelement4"
+            src="images/psevdoelement4.svg"
+          />
+          <img
+            class="psevdoelementik psevdoelement3"
+            src="images/psevdoelement3.svg"
+          />
         </div>
       </section>
-    </section>
 
-    <!-- ВТОРАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
-    <section class="psevdoscreen2">
-      <p class="psevdotext3">СОЕДИНИ ФОТОГРАФИЮ</p>
-    </section>
-    <section class="psevdosection2">
-      <div class="psevdopuzzle">
-        <img
-          class="psevdoelementik psevdoelement2"
-          src="images/psevdoelement2.svg"
-        />
-        <img
-          class="psevdoelementik psevdoelement1"
-          src="images/psevdoelement1.svg"
-        />
-        <img
-          class="psevdoelementik psevdoelement4"
-          src="images/psevdoelement4.svg"
-        />
-        <img
-          class="psevdoelementik psevdoelement3"
-          src="images/psevdoelement3.svg"
-        />
-      </div>
-    </section>
+      <!-- ТРЕТИЙ ЭКРАН -->
+      <section class="screen3">
+        <p class="text4">СОПОСТАВЬ СИЛУЭТЫ И КОНТУР</p>
+      </section>
+      <section class="inside-box">
+        <section class="screen31">
+          <div class="contour1"></div>
+          <div id="silhouette5header">
+            <img id="silhouette5" src="images/silhouette5.svg" />
+          </div>
+          <div class="contour2"></div>
+          <div id="silhouette4header">
+            <img id="silhouette4" src="images/silhouette4.svg" />
+          </div>
+          <div class="contour3"></div>
+          <div id="silhouette2header">
+            <img id="silhouette2" src="images/silhouette2.svg" />
+          </div>
+          <div class="contour4"></div>
+          <div id="silhouette3header">
+            <img id="silhouette3" src="images/silhouette3.svg" />
+          </div>
+          <div class="contour5"></div>
+          <div id="silhouette1header">
+            <img id="silhouette1" src="images/silhouette1.svg" />
+          </div>
+        </section>
+      </section>
 
-    <!-- ТРЕТИЙ ЭКРАН -->
-    <section class="screen3">
-      <p class="text4">СОПОСТАВЬ СИЛУЭТЫ И КОНТУР</p>
-    </section>
-    <section class="inside-box">
-      <section class="screen31">
-        <div class="contour1"></div>
-        <div id="silhouette5header">
-          <img id="silhouette5" src="images/silhouette5.svg" />
+      <!-- ТРЕТЬЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
+      <section class="psevdoscreen3">
+        <p class="psevdotext4">СОПОСТАВЬ СИЛУЭТЫ И КОНТУР</p>
+      </section>
+      <section class="psevdoinsidebox">
+        <div class="psevdocontour1"></div>
+        <div id="psevdosilhouette1header">
+          <img id="psevdosilhouette1" src="images/silhouette4.svg" />
         </div>
-        <div class="contour2"></div>
-        <div id="silhouette4header">
-          <img id="silhouette4" src="images/silhouette4.svg" />
+        <div class="psevdocontour2"></div>
+        <div id="psevdosilhouette2header">
+          <img id="psevdosilhouette2" src="images/silhouette5.svg" />
         </div>
-        <div class="contour3"></div>
-        <div id="silhouette2header">
-          <img id="silhouette2" src="images/silhouette2.svg" />
-        </div>
-        <div class="contour4"></div>
-        <div id="silhouette3header">
-          <img id="silhouette3" src="images/silhouette3.svg" />
-        </div>
-        <div class="contour5"></div>
-        <div id="silhouette1header">
-          <img id="silhouette1" src="images/silhouette1.svg" />
+        <div class="psevdocontour3"></div>
+        <div id="psevdosilhouette3header">
+          <img id="psevdosilhouette3" src="images/silhouette1.svg" />
         </div>
       </section>
-    </section>
 
-    <!-- ТРЕТЬЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
-    <section class="psevdoscreen3">
-      <p class="psevdotext4">СОПОСТАВЬ СИЛУЭТЫ И КОНТУР</p>
-    </section>
-    <section class="psevdoinsidebox">
-      <div class="psevdocontour1"></div>
-      <div id="psevdosilhouette1header">
-        <img id="psevdosilhouette1" src="images/silhouette4.svg" />
-      </div>
-      <div class="psevdocontour2"></div>
-      <div id="psevdosilhouette2header">
-        <img id="psevdosilhouette2" src="images/silhouette5.svg" />
-      </div>
-      <div class="psevdocontour3"></div>
-      <div id="psevdosilhouette3header">
-        <img id="psevdosilhouette3" src="images/silhouette1.svg" />
-      </div>
-    </section>
+      <!-- ЧЕТВЕРТЫЙ ЭКРАН -->
+      <section class="screen4">
+        <p class="text5">НАРИСУЙ ВЫХОД</p>
+      </section>
+      <section class="canvas">
+        <canvas id="canvas"></canvas>
+        <div class="labyrinth"></div>
+        <div class="hint11"></div>
+        <div class="hint2"></div>
+        <div class="hint3"></div>
+        <div class="circle"></div>
+        <img id="clear" src="images/clear.svg" />
+      </section>
 
-    <!-- ЧЕТВЕРТЫЙ ЭКРАН -->
-    <section class="screen4">
-      <p class="text5">НАРИСУЙ ВЫХОД</p>
-    </section>
-    <section class="canvas">
-      <canvas id="canvas"></canvas>
-      <div class="labyrinth"></div>
-      <div class="hint11"></div>
-      <div class="hint2"></div>
-      <div class="hint3"></div>
-      <div class="circle"></div>
-      <img id="clear" src="images/clear.svg" />
-    </section>
+      <!-- ЧЕТВЕРТАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
+      <section class="psevdoscreen4">
+        <p class="psevdotext5">НАРИСУЙ ВЫХОД</p>
+      </section>
+      <section class="psevdocanvas">
+        <canvas id="psevdocanvas"></canvas>
+        <div class="psevdolabyrinth"></div>
+        <img id="psevdoclear" src="images/clear.svg" />
+      </section>
 
-    <!-- ЧЕТВЕРТАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ -->
-    <section class="psevdoscreen4">
-      <p class="psevdotext5">НАРИСУЙ ВЫХОД</p>
-    </section>
-    <section class="psevdocanvas">
-      <canvas id="psevdocanvas"></canvas>
-      <div class="psevdolabyrinth"></div>
-      <img id="psevdoclear" src="images/clear.svg" />
-    </section>
+      <!-- ПОДВАЛ -->
+      <section class="basement">
+        <div class="seats"></div>
+        <div><img id="anna" src="images/anna.svg" /></div>
+        <div><img id="kamila" src="images/kamila.svg" /></div>
+        <div><img id="kate" src="images/kate.svg" /></div>
+        <div><img id="artem" src="images/artem.png" /></div>
+        <div><img id="nastyusha" src="images/nastyushka.svg" /></div>
+        <div id="hintbase1"></div>
+        <div id="hintbase2"></div>
+        <div id="hintbase3"></div>
+        <div id="fakebutton"></div>
+        <div id="fakebutton2"></div>
+      </section>
 
-    <!-- ПОДВАЛ -->
-    <section class="basement">
-      <div class="seats"></div>
-      <div><img id="anna" src="images/anna.svg" /></div>
-      <div><img id="kamila" src="images/kamila.svg" /></div>
-      <div><img id="kate" src="images/kate.svg" /></div>
-      <div><img id="artem" src="images/artem.png" /></div>
-      <div><img id="nastyusha" src="images/nastyushka.svg" /></div>
-      <div id="hintbase1"></div>
-      <div id="hintbase2"></div>
-      <div id="hintbase3"></div>
-      <div id="fakebutton"></div>
-      <div id="fakebutton2"></div>
-    </section>
-
-    <!-- ПСЕВДОПОДВАЛ -->
-    <section class="psevdobasement">
-      <div class="psevdoseats"></div>
-      <div><img id="psevdoanna" src="images/anna.svg" /></div>
-      <div><img id="psevdokamila" src="images/kamila.svg" /></div>
-      <div><img id="psevdokate" src="images/kate.svg" /></div>
-      <div id="psevdohintbase1"></div>
-      <div id="psevdohintbase2"></div>
-      <div id="psevdohintbase3"></div>
-    </section>
+      <!-- ПСЕВДОПОДВАЛ -->
+      <section class="psevdobasement">
+        <div class="psevdoseats"></div>
+        <div><img id="psevdoanna" src="images/anna.svg" /></div>
+        <div><img id="psevdokamila" src="images/kamila.svg" /></div>
+        <div><img id="psevdokate" src="images/kate.svg" /></div>
+        <div id="psevdohintbase1"></div>
+        <div id="psevdohintbase2"></div>
+        <div id="psevdohintbase3"></div>
+      </section>
+    </div>
   </body>
 </html>

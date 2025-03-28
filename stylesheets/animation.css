@@ -1,3 +1,33 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(-20vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes moving2 {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(20vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
 @keyframes shake {
   0% {
     transform: translateX(0);

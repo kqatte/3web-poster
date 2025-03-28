@@ -13,6 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
   PsevdoinitCanvas()
 })
 
+// ПРЕЛОАДЕР
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Находим элементы прелоадера и основного контента
+  const preloader = document.getElementById('preloader')
+  const content = document.getElementById('content')
+
+  // Имитация задержки загрузки (например, 3 секунды)
+  setTimeout(() => {
+    // Скрываем прелоадер
+    preloader.style.display = 'none'
+
+    // Показываем основной контент
+    content.style.display = 'block'
+  }, 3000) // Задержка в миллисекундах (3000 = 3 секунды)
+})
 // ПЕРВЫЙ ЭКРАН
 function BackgroundMove() {
   document.querySelector('.hint1').addEventListener('click', () => {
