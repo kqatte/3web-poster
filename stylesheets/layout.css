@@ -11,6 +11,8 @@ section {
 }
 /* ПРЕЛОАДЕР */
 #preloader {
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,6 +23,10 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+}
+.preloadertext {
+  color: white;
+  font-size: 3vw;
 }
 .spinner {
   border: 8px solid #000000;
