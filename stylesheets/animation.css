@@ -42,7 +42,10 @@
   transform: scale(1.07);
   filter: grayscale(50%) brightness(70%);
 }
-
+.elementik:hover {
+  transform: scale(1.02);
+  filter: brightness(110%);
+}
 /* АДАПТИВКИ  */
 .psevdohint1:hover {
   transform: scale(1.07);
