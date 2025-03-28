@@ -38,26 +38,7 @@ section {
   height: 60px;
   animation: spin 1s linear infinite;
 }
-.shtori1 {
-  background-image: url(../images/leftshtoripreloader.svg);
-  position: absolute;
-  margin-left: -80vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vw;
-  width: 50vw;
-  animation: moving 2s infinite;
-}
-.shtori2 {
-  background-image: url(../images/rightshtoripreloader.svg);
-  position: absolute;
-  margin-left: 80vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vw;
-  width: 50vw;
-  animation: moving2 2s infinite;
-}
+
 /* ПЕРВЫЙ ЭКРАН  */
 .screen1 {
   display: flex;
