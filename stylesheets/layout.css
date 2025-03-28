@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  cursor: url(../images/cursorbasic.png), auto;
 }
 p {
   font-family: 'Kontrabanda';
@@ -51,7 +52,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 .background1 {
   background-image: url(../images/background1.svg);
@@ -125,7 +126,7 @@ section {
   background-size: cover;
   width: 75vw;
   height: 53.75vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -144,7 +145,7 @@ section {
   width: 11.8vw;
   margin-top: 54vw;
   transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 /* ВТОРАЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
 .psevdoscreen2,
@@ -192,7 +193,7 @@ section {
 #silhouette5header {
   margin-left: 24vw;
   margin-top: 4vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 
 .contour2 {
@@ -214,7 +215,7 @@ section {
 #silhouette4header {
   margin-left: 62vw;
   margin-top: 4vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 
 .contour3 {
@@ -236,7 +237,7 @@ section {
 #silhouette2header {
   margin-left: 2vw;
   margin-top: 29vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 
 .contour4 {
@@ -258,7 +259,7 @@ section {
 #silhouette3header {
   margin-left: 41vw;
   margin-top: 0vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 
 .contour5 {
@@ -280,7 +281,7 @@ section {
 #silhouette1header {
   margin-left: 82vw;
   margin-top: 18vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
 }
 
 /* ТРЕТЬЯ ПСЕВДОСЕКЦИЯ ДЛЯ МОБИЛКИ */
@@ -312,7 +313,7 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
-  cursor: crosshair;
+  cursor: url(../images/cursordraw.png), crosshair;
   height: 65vw;
   margin-top: -2vw;
 }
@@ -377,7 +378,7 @@ section {
   z-index: 10;
   height: 7vw;
   width: 14vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -454,7 +455,7 @@ section {
   position: absolute;
   margin-top: -30vw;
   margin-left: 14vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 #hintbase2 {
@@ -466,7 +467,7 @@ section {
   position: absolute;
   margin-top: -37vw;
   margin-left: 49vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 #hintbase3 {
@@ -478,7 +479,7 @@ section {
   position: absolute;
   margin-top: -29vw;
   margin-left: 80vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -491,7 +492,7 @@ section {
   position: absolute;
   margin-top: -39.5vw;
   margin-left: 21.2vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -504,7 +505,7 @@ section {
   position: absolute;
   margin-top: -39vw;
   margin-left: 62vw;
-  cursor: pointer;
+  cursor: url(../images/cursorpointer.png), pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
