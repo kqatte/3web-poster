@@ -192,6 +192,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 6vw;
+  overflow: hidden;
 }
 .text4 {
   font-size: 4vw;
@@ -203,6 +204,7 @@ section {
 
 .inside-box {
   height: 48vw;
+  overflow: hidden;
 }
 .contour1 {
   background-image: url(../images/contour1.svg);
