@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader')
   const content = document.getElementById('content')
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      preloader.style.display = 'none'
-      content.style.display = 'block'
-    }, 3000)
-  })
+  setTimeout(() => {
+    preloader.style.display = 'none'
+    content.style.display = 'block'
+  }, 3000)
 })
 
 // ПЕРВЫЙ ЭКРАН
